@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Heebo:wght@100;300;400&family=Montserrat:ital,wght@0,300;0,400;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  position: relative;
+}
+
+#videoBG {
+  position: absolute;
+  margin-top: -15%;
+  width: 100%;
+  height: auto;
+}
+
+.container__form {
+  position: absolute;
+  margin-top: 22%;
+  left: 50%;
+  margin-left: -200px;
+  border-radius: 4px;
+  width: 400px;
+  height: 550px;
+  padding: 20px;
+}
+
+.container__form h2 {
+  font-size: 2.2em;
+  color: #0066FF;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0066FF, 0 0 82px #0066FF, 0 0 92px #0066FF, 0 0 102px #0066FF, 0 0 151px #0066FF;
+  text-align: center;
+  z-index: 5;
+  height: 100px;
+}
+
+.container__form .form__box {
+  color: #d9d9d9;
+  font-size: 1.1em;
+  color: #fff;
+  text-align: center;
+}
+
+.container__form .form__box p {
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.container__form .form__box input, .container__form .form__box textarea, .container__form .form__box select {
+  background: #fff;
+  opacity: 0.3;
+  border: 0;
+  outline: none;
+}
+
+.container__form .form__box .item__form {
+  border: solid 3px white;
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+}
+
+.container__form .form__box .item__form:focus {
+  border-color: #0066FF;
+  opacity: 0.7;
+}
+
+.container__form .btn {
+  color: blue;
+  width: 100px;
+  height: 50px;
+  margin-right: 10px;
+  float: right;
+}
+
+.container__form .btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#email {
+  opacity: 0;
+}
+
+footer {
+  position: relative;
+  top: 1000px;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.fullpage {
+  position: relative;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.fullpage .fullpage__container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  z-index: 10;
+}
+
+.fullpage .fullpage__container h1 {
+  font-size: 3.5em;
+  font-family: "Montserrat";
+  letter-spacing: 7px;
+  font-weight: 250;
+  color: #d9d9d9;
+}
+
+.fullpage .fullpage__container .container__tittle--neon {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  -webkit-animation-name: slideIn;
+          animation-name: slideIn;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0066FF, 0 0 82px #0066FF, 0 0 92px #0066FF, 0 0 102px #0066FF, 0 0 151px #0066FF;
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    opacity: 0;
+    margin: -25px;
+  }
+  to {
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    margin: -25px;
+  }
+  to {
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+.fullpage .fullpage__container h3 {
+  font-size: 1.4em;
+  font-family: "Montserrat";
+  color: #d9d9d9;
+  padding: 25px;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: subTitle;
+          animation-name: subTitle;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes subTitle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes subTitle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fullpage .fullpage__container .container__btn {
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+
+.fullpage .fullpage__container .container__btn svg {
+  width: 100%;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: btnAnimation;
+          animation-name: btnAnimation;
+  opacity: 0;
+}
+
+@-webkit-keyframes btnAnimation {
+  from {
+    height: 120px;
+    opacity: 0;
+  }
+  to {
+    height: 180px;
+    opacity: 1;
+  }
+}
+
+@keyframes btnAnimation {
+  from {
+    height: 120px;
+    opacity: 0;
+  }
+  to {
+    height: 180px;
+    opacity: 1;
+  }
+}
+
+.sobremi__area {
+  position: relative;
+  height: 700px;
+  background-color: #042e46;
+}
+
+.sobremi__area .sobremi__container h2 {
+  text-align: center;
+  padding-top: 35px;
+  color: #0066FF;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0066FF, 0 0 82px #0066FF, 0 0 92px #0066FF, 0 0 102px #0066FF, 0 0 151px #0066FF;
+  font-size: 2.2em;
+  font-family: "Montserrat";
+}
+
+.sobremi__area .sobremi__container .sobremi__text {
+  width: auto;
+}
+
+.sobremi__area .sobremi__container .sobremi__text h3 {
+  color: #d9d9d9;
+  font-size: 1.4em;
+  font-family: "Heebo";
+  padding-top: 25px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.sobremi__area .sobremi__container .sobremi__text .text__box {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.sobremi__area .sobremi__container .sobremi__text .text__box p {
+  font-size: 1.1em;
+  font-family: "Heebo";
+  color: #d9d9d9;
+  margin-top: 9%;
+  margin-right: 15%;
+  padding: 25px;
+  width: 720px;
+  height: auto;
+  background-color: #315c63;
+  border-radius: 25px;
+  float: right;
+}
+
+.sobremi__area .sobremi__container .sobremi__text .text__box img {
+  width: 320px;
+  height: 320px;
+  border: 6px solid #0066FF;
+  border-radius: 160px;
+}
+
+.sobremi__area .sobremi__container .sobremi__text .text__box .sobremi__img {
+  border-radius: 160px;
+  float: left;
+  margin: 80px;
+  margin-left: 100px;
+}
+
+.service__area {
+  background-color: #151d2e;
+  position: relative;
+  padding: 40px;
+  height: auto;
+}
+
+.service__area .service__text {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: start;
+}
+
+.service__area .service__text h2 {
+  padding: 20px;
+  color: #9E3E17;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #9E3E17, 0 0 82px #9E3E17, 0 0 92px #9E3E17, 0 0 102px #9E3E17, 0 0 151px #9E3E17;
+  font-size: 2.2em;
+  font-family: "Montserrat";
+}
+
+.service__area .service__text p {
+  width: 850px;
+  padding: 15px;
+  color: #d9d9d9;
+  font-size: 1.4em;
+  font-family: "Heebo";
+}
+
+.service__area .service__element {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.service__area .service__element .service__element--item {
+  background-color: #9E3E17;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 45px;
+  padding: 30px;
+}
+
+.service__area .service__element .service__element--item .item__box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
+  height: 345px;
+  text-align: center;
+}
+
+.service__area .service__element .service__element--item .item__box h3 {
+  color: black;
+  border-bottom: 1px solid black;
+  font-size: 1.4em;
+  padding-top: 15px;
+}
+
+.service__area .service__element .service__element--item .item__box p {
+  color: black;
+  font-size: 1.1em;
+}
+
+.skill__area {
+  background-color: #315c63;
+  height: 85vh;
+}
+
+@media screen and (max-width: 1079px) {
+  .skill__area {
+    height: auto;
+  }
+}
+
+.skill__area .skill__text {
+  width: 25%;
+  margin: 60px;
+  height: auto;
+  float: left;
+  text-align: left;
+}
+
+.skill__area .skill__text h2 {
+  text-align: center;
+  font-size: 2.2em;
+  font-family: "Montserrat";
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #247F4E, 0 0 82px #247F4E, 0 0 92px #247F4E, 0 0 102px #247F4E, 0 0 151px #247F4E;
+  color: #247F4E;
+}
+
+.skill__area .skill__text p {
+  font-size: 1.1em;
+  font-family: "Heebo";
+  color: #d9d9d9;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 1079px) {
+  .skill__area .skill__text {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    text-align: center;
+    float: unset;
+  }
+  .skill__area .skill__text h2 {
+    padding-top: 35px;
+  }
+  .skill__area .skill__text p {
+    padding: 35px;
+    padding-bottom: 0;
+  }
+}
+
+.skill__area .skill__grid {
+  width: 60%;
+  float: right;
+  height: auto;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(160px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-auto-rows: 220px;
+  grid-column-gap: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1079px) {
+  .skill__area .skill__grid {
+    width: 100%;
+    height: auto;
+    float: unset;
+    margin-top: 0;
+  }
+}
+
+.skill__area .skill__grid .skill__grid--item:hover {
+  -webkit-animation-name: iconscale;
+          animation-name: iconscale;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes iconscale {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+@keyframes iconscale {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

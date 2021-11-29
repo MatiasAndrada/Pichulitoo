@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Heebo:wght@100;300;400&family=Montserrat:ital,wght@0,300;0,400;1,400&display=swap');
+
+@import "consultas";
+@import "variables";
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.fullpage {
+    position: relative;
+    height: 100vh;
+    background-color: map-get($colors, colorA);
+
+    .fullpage__container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 10;
+
+        h1 {
+            font-size: map-get($headings, h1);
+            font-family: $font-tittle;
+            letter-spacing: 7px;
+            font-weight: 250;
+            color: $textcolor;
+        }
+
+        .container__tittle--neon {
+            animation-duration: 2s;
+            animation-delay: 0.25s;
+            animation-name: slideIn;
+            text-shadow: shadow(map-get($colors, colorC));
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                margin: -25px;
+            }
+
+            to {
+                opacity: 1;
+                margin: 0;
+            }
+        }
+
+        h3 {
+            font-size: map-get($headings, h3);
+            font-family: $font-tittle;
+            color: $textcolor;
+            padding: 25px;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            animation-name: subTitle;
+            animation-delay: 3s;
+            animation-duration: 3s;
+        }
+
+        @keyframes subTitle {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container__btn {
+            display: block;
+            width: 80px;
+            height: 80px;
+        }
+
+        .container__btn svg {
+            width: 100%;
+            animation-delay: 4s;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-name: btnAnimation;
+            opacity: 0;
+        }
+
+        @keyframes btnAnimation {
+            from {
+                height: 120px;
+                opacity: 0;
+            }
+
+            to {
+                height: 180px;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.sobremi__area {
+    position: relative;
+    height: 700px;
+    background-color: map-get($colors, colorB);
+
+    .sobremi__container {
+        h2 {
+            text-align: center;
+            padding-top: 35px;
+            color: map-get($colors, colorC);
+            text-shadow: shadow(map-get($colors, colorC));
+            font-size: map-get($headings, h2);
+            font-family: $font-tittle;
+        }
+
+        .sobremi__text {
+            width: auto;
+
+            h3 {
+                color: $textcolor;
+                font-size: map-get($headings, h3);
+                font-family: $font-paragraph;
+                padding-top: 25px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+
+            .text__box {
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+
+                p {
+                    font-size: map-get($headings, p);
+                    font-family: $font-paragraph;
+                    color: $textcolor;
+                    margin-top: 9%;
+                    margin-right: 15%;
+                    padding: 25px;
+                    width: 720px;
+                    height: auto;
+                    background-color: map-get($colors, colorG);
+                    border-radius: 25px;
+                    float: right;
+                }
+
+                img {
+                    width: 320px;
+                    height: 320px;
+                    border: 6px solid map-get($colors, colorC);
+                    border-radius: 160px;
+                }
+
+                .sobremi__img {
+                    border-radius: 160px;
+                    float: left;
+                    margin: 80px;
+                    margin-left: 100px;
+
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+.service__area {
+    background-color: map-get($colors, colorF);
+    position: relative;
+    padding: 40px;
+    height: auto;
+
+    .service__text {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: start;
+
+
+        h2 {
+            padding: 20px;
+            color: map-get($colors, colorE);
+            text-shadow: shadow(map-get($colors, colorE));
+            font-size: map-get($headings, h2);
+            font-family: $font-tittle;
+        }
+
+
+        p {
+            width: 850px;
+            padding: 15px;
+            color: $textcolor;
+            font-size: map-get($headings, h3);
+            font-family: $font-paragraph;
+        }
+    }
+
+    .service__element {
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        .service__element--item {
+            background-color: map-get($colors, colorE);
+            justify-content: center;
+            align-items: center;
+            border-radius: 45px;
+            padding: 30px;
+
+            .item__box {
+                align-items: center;
+                width: 220px;
+                height: 345px;
+                text-align: center;
+
+                h3 {
+                    color: black;
+                    border-bottom: 1px solid black;
+                    font-size: map-get($headings, h3);
+                    padding-top: 15px;
+                }
+
+                p {
+                    color: black;
+                    font-size: map-get($headings, p);
+                }
+
+            }
+
+        }
+    }
+}
+
+.skill__area {
+    background-color: map-get($colors, colorG);
+    height: 85vh;
+    @media screen and (max-width: 1079px) {
+        height: auto;
+    }
+    .skill__text {
+        width: 25%;
+        margin: 60px;
+        height: auto;
+        float: left;
+        text-align: left;
+        h2 {
+            text-align: center;
+            font-size: map-get($headings, h2);
+            font-family: $font-tittle;
+            text-shadow: shadow(map-get($colors, colorD));
+            color: map-get($colors, colorD);
+        }
+
+        p {
+            font-size: map-get($headings, p);
+            font-family: $font-paragraph;
+            color: $textcolor;
+            padding-top: 50px;
+        }
+        @media screen and (max-width: 1079px){
+            width: 100%;
+            h2{
+            padding-top: 35px;
+            }
+            p{
+            padding: 35px;
+            padding-bottom: 0;
+            }
+            margin: 0;
+            height: auto;
+            text-align: center;
+            float: unset;
+        }
+    }
+    .skill__grid {
+        width: 60%;
+        float: right;
+        height: auto;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        grid-auto-rows: 220px;
+        grid-column-gap: 1.5rem;
+        justify-content: center;
+        margin-top: 80px;
+        @media screen and (max-width: 1079px){
+            width: 100%;
+            height: auto;
+            float: unset;
+            margin-top: 0;
+                }
+        .skill__grid--item:hover {
+            animation-name: iconscale;
+            animation-duration: 0.4s;
+            animation-fill-mode: forwards;
+            @keyframes iconscale {
+                from{
+                    transform: scale(1);
+                }
+                to{
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+}

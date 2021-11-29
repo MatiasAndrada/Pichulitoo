@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style/estilos.css">
+	<title>Matias-Andrada-developer</title>
+	<link rel="shortcut icon" href="multimedia/alasBlanclas.png">
+</head>
+
+<body>
+	<section>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 99;">
+			<div class="container-fluid">
+				<a class="navbar-brand active" href="index.html">
+					<img src="multimedia/alasBlanclas.png" style="width:120px">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+						<li class="nav-item">
+							<a class="nav-link active " href="Consultas.html">Consultas</a>
+						</li>
+						
+					</ul>
+				</div> 
+		</nav>
+
+		<section>
+			<video id="videoBG" src="multimedia/alasWeb.mp4" width="1920" height="1080" loop autoplay muted>
+			</video>
+			<form class="container__form" id="form">
+				<h2>Contactame!</h2>
+				<div class="form__box">
+					<p>Nombre:</p>
+					<input type="text" class="item__form" name="nombre">
+				</div>
+				<div class="form__box">
+					<p>Apellido:</p>
+					<input type="text" class="item__form" name="apellido">
+				</div>
+				<div class="form__box">
+					<p>Correo:</p>
+					<input type="email" class="item__form" placeholder="name@example.com" name="correo">
+				</div>
+				<div class="form__box">
+					<p>Selecciona el motivo:</p>
+					<select class="item__form" name="motivo">
+						<option>Consulta</option>
+						<option>Propuesta</option>
+						<option>Sugerencia</option>
+						<option>Otro</option>
+					</select>
+				</div>
+				<div class="form__box">
+					<p>Escriba aqui</p>
+					<textarea class="item__form" rows="3"></textarea name="mensaje">
+				</div>
+				<input type="submit" class="btn" value="Enviar" name="boton">
+			</form>
+			<a href="email:matiasandrada5622@gmail.com" id="email">mail</a>
+		</section>
+
+		<footer class="bg-dark text-center text-white">
+
+			<div class="container p-3 pb-0">
+				
+				<section class="mb-4">
+					<!-- Facebook -->
+					<a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998; border-radius: 48px;" href="https://www.facebook.com/profile.php?id=100005728066180"
+						role="button"><i class="fab fa-facebook-f">
+						<img src="multimedia/iconFooter/facebook_icon.png" width="32px">
+						</i></a>
+					<!-- Instagram -->
+					<a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac; border-radius: 48px;" href="https://www.instagram.com/matias_andrada5/?hl=es-la"
+						role="button"><i class="fab fa-instagram">
+						<img src="multimedia/iconFooter/instagram_icon.png" width="32px">
+						</i></a>
+	
+					<!-- Linkedin -->
+					<a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca; border-radius: 48px;" href="https://www.linkedin.com/in/matias-andrada-810900217/"
+						role="button"><i class="fab fa-linkedin-in">
+						<img src="multimedia/iconFooter/linkedin_icon.png" width="32px">
+						</i></a>
+	
+					<!-- whatsapp -->
+					<a class="btn btn-primary btn-floating m-1" style="background-color: #00ca22; border-radius: 48px;" href="https://wa.me/543532401540"
+						role="button"><i class="fab fa-linkedin-in">
+						<img src="multimedia/iconFooter/whatsapp_icon.png" width="32px">
+						</i></a>
+					
+						<!-- Twitter --
+					<a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!"
+					role="button"><i class="fab fa-twitter"></i></a>
+					!-- Github --
+					<a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!"
+						role="button"><i class="fab fa-github"></i></a> -->
+				</section>
+				
+			</div>
+			
+	
+			
+			<div class="text-center p-0" style="background-color: rgba(0, 0, 0, 0.2);">
+				
+				<a class="text-white" href="index.html">^</a>
+			</div>
+			
+		</footer>
+		<script>
+			const $form = document.querySelector('#form')
+			$form.addEventListener('submit', handleSubmit)
+				function handleSubmit(event) {
+					event.preventDefault()
+					const form = new FormData(this)
+					console.log(form.get('name'))
+				}
+		</script>
+		<script src=js/wow.min.js>
+			new WOW().init();
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+			integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+			integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+		</script>
+</body>
+
+</html>
