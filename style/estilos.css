@@ -102,6 +102,7 @@ footer {
 .fullpage {
   position: relative;
   height: 100vh;
+  width: auto;
   background-color: #000000;
 }
 
@@ -240,9 +241,21 @@ footer {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .fullpage {
+    width: auto;
+  }
+  .fullpage .fullpage__container h1 {
+    font-size: 2.2em;
+  }
+  .fullpage .fullpage__container h3 {
+    font-size: 1.1em;
+  }
+}
+
 .sobremi__area {
   position: relative;
-  height: 700px;
+  height: auto;
   background-color: #042e46;
 }
 
@@ -267,7 +280,7 @@ footer {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 80%;
 }
 
 .sobremi__area .sobremi__container .sobremi__text .text__box {
@@ -304,6 +317,24 @@ footer {
   margin-left: 100px;
 }
 
+@media screen and (max-width: 768px) {
+  .sobremi__area {
+    height: auto;
+  }
+  .sobremi__area .sobremi__container .sobremi__text h3 {
+    font-size: 1.4em;
+  }
+  .sobremi__area .sobremi__container .sobremi__text .text__box p {
+    width: 80%;
+    float: none;
+    margin: 25px auto;
+  }
+  .sobremi__area .sobremi__container .sobremi__text .text__box .sobremi__img {
+    float: none;
+    margin: 25px;
+  }
+}
+
 .service__area {
   background-color: #151d2e;
   position: relative;
@@ -319,7 +350,7 @@ footer {
 }
 
 .service__area .service__text h2 {
-  padding: 20px;
+  text-align: center;
   color: #9E3E17;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #9E3E17, 0 0 82px #9E3E17, 0 0 92px #9E3E17, 0 0 102px #9E3E17, 0 0 151px #9E3E17;
   font-size: 2.2em;
@@ -327,7 +358,7 @@ footer {
 }
 
 .service__area .service__text p {
-  width: 850px;
+  text-align: center;
   padding: 15px;
   color: #d9d9d9;
   font-size: 1.4em;
@@ -362,7 +393,8 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 45px;
-  padding: 30px;
+  padding: 23px;
+  margin: 5px;
 }
 
 .service__area .service__element .service__element--item .item__box {
@@ -384,6 +416,30 @@ footer {
 .service__area .service__element .service__element--item .item__box p {
   color: black;
   font-size: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+  .service__area {
+    padding: auto;
+  }
+  .service__area .service__text {
+    width: 85%;
+  }
+  .service__area .service__text p {
+    padding: 0;
+    margin-bottom: 35px;
+    width: 100%;
+    text-align: center;
+  }
+  .service__area .service__element {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+  }
+  .service__area .service__element .service__element--item {
+    margin-bottom: 25px;
+  }
 }
 
 .skill__area {
@@ -491,6 +547,17 @@ footer {
   to {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skill__area .skill__grid {
+    padding: 8px;
+    float: none;
+    grid-auto-rows: 150px;
+  }
+  .skill__area .skill__grid .skill__grid--item {
+    width: 144px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

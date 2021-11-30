@@ -14,6 +14,7 @@
 .fullpage {
     position: relative;
     height: 100vh;
+    width: auto;
     background-color: map-get($colors, colorA);
 
     .fullpage__container {
@@ -102,11 +103,26 @@
             }
         }
     }
+    @media screen and (max-width: 768px) {
+        width: auto;
+            .fullpage__container{
+                h1{
+                font-size: map-get($headings, h2);
+                }
+                h3{
+                    font-size: map-get($headings, p);
+                }
+            
+    }
 }
+}
+
+
+
 
 .sobremi__area {
     position: relative;
-    height: 700px;
+    height: auto;
     background-color: map-get($colors, colorB);
 
     .sobremi__container {
@@ -130,14 +146,13 @@
                 text-align: center;
                 margin-left: auto;
                 margin-right: auto;
-                width: 50%;
+                width: 80%;
             }
 
             .text__box {
                 width: 100%;
                 height: 100%;
                 overflow: auto;
-
                 p {
                     font-size: map-get($headings, p);
                     font-family: $font-paragraph;
@@ -150,29 +165,46 @@
                     background-color: map-get($colors, colorG);
                     border-radius: 25px;
                     float: right;
-                }
+                    }   
 
                 img {
                     width: 320px;
                     height: 320px;
                     border: 6px solid map-get($colors, colorC);
                     border-radius: 160px;
-                }
+                    }
 
                 .sobremi__img {
                     border-radius: 160px;
                     float: left;
                     margin: 80px;
                     margin-left: 100px;
-
+                    }
                 }
             }
-
+    }
+    @media screen and (max-width: 768px) {
+    height: auto;
+        .sobremi__container{
+            .sobremi__text{
+                h3{
+                font-size: map-get($headings, h3);
+                }
+                .text__box{
+                    p{
+                        width: 80%;
+                        float: none;
+                        margin: 25px auto ;
+                    }
+                    .sobremi__img{
+                        float: none;
+                        margin: 25px;
+                    }
+                }
+            }
         }
     }
 }
-
-
 
 
 .service__area {
@@ -189,7 +221,7 @@
 
 
         h2 {
-            padding: 20px;
+            text-align: center;
             color: map-get($colors, colorE);
             text-shadow: shadow(map-get($colors, colorE));
             font-size: map-get($headings, h2);
@@ -198,7 +230,7 @@
 
 
         p {
-            width: 850px;
+            text-align: center;
             padding: 15px;
             color: $textcolor;
             font-size: map-get($headings, h3);
@@ -219,7 +251,8 @@
             justify-content: center;
             align-items: center;
             border-radius: 45px;
-            padding: 30px;
+            padding: 23px;
+            margin: 5px;
 
             .item__box {
                 align-items: center;
@@ -243,6 +276,26 @@
 
         }
     }
+    @media screen and (max-width: 768px) {
+    padding: auto;
+        .service__text{
+            width: 85%;
+            p{
+            padding: 0;
+            margin-bottom: 35px;
+            width: 100%;
+            text-align: center;
+            }
+        }
+        .service__element{
+            justify-content: center;
+            padding: 0;
+            .service__element--item{
+            margin-bottom: 25px;
+            }
+        }
+    }
+
 }
 
 .skill__area {
@@ -317,5 +370,16 @@
             }
         }
     }
+    @media screen and (max-width: 768px) {
+    .skill__grid{
+        padding: 8px;
+        float: none;
+        grid-auto-rows: 150px;
+        .skill__grid--item{
+            width: 144px;
+        }
+    }
+    }
 
 }
+
