@@ -158,9 +158,9 @@
                     font-family: $font-paragraph;
                     color: $textcolor;
                     margin-top: 9%;
-                    margin-right: 15%;
+                    margin-right: 200px;
                     padding: 25px;
-                    width: 720px;
+                    width: 570px;
                     height: auto;
                     background-color: map-get($colors, colorG);
                     border-radius: 25px;
@@ -175,7 +175,6 @@
                     }
 
                 .sobremi__img {
-                    border-radius: 160px;
                     float: left;
                     margin: 80px;
                     margin-left: 100px;
@@ -183,7 +182,7 @@
                 }
             }
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1274px) {
     height: auto;
         .sobremi__container{
             .sobremi__text{
@@ -192,13 +191,15 @@
                 }
                 .text__box{
                     p{
-                        width: 80%;
+                        width: 70%;
                         float: none;
                         margin: 25px auto ;
                     }
                     .sobremi__img{
+                        display: block;
                         float: none;
-                        margin: 25px;
+                        margin-left: auto;
+                        margin-right: auto;
                     }
                 }
             }
