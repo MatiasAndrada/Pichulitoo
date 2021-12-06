@@ -17,18 +17,8 @@ body {
     margin-top: -15%;
     width: 100%;
     height: auto;
+    z-index: -10;
 }
-
-.container__form { 
-
-    position: absolute;
-    margin-top: 22%;
-    left: 50%;
-    margin-left: -200px;
-    border-radius: 4px;
-    width: 400px;
-    height: 550px;
-    padding: 20px;
 
     h2 {
         font-size: map-get($headings, h2);
@@ -37,33 +27,24 @@ body {
         text-align: center;
         z-index: 5;
         height: 100px;
+        margin-top: 22%;
     }
-
-        label{
-        
+.form__area{
+    width: 500px;
+    height: auto;
+    z-index: 15;
+    margin-left: 50%;
+    margin-left: 500px;
+    label{
         color: $textcolor;
         font-size: map-get($headings, p);
-        color: #fff;
-        text-align: center;
-        
-
-        .item__form:focus {
-            border-color: map-get($colors, colorC);
-            opacity: 0.7;
-        }
+        font-family: $font-paragraph;
     }
 
-    .btn {
-        color: blue;
-        width: 100px;
-        height: 50px;
-        margin-right: 10px;
-        float: right;
-    }
-    .btn:hover{
-        transform: scale(1.05);
-    }
 }
+
+
+
 #email{
     opacity: 0;
 }
