@@ -39,82 +39,109 @@
 			</video>
 			<form class="container__form" id="form">
 				<h2>Contactame!</h2>
-				<div class="form__box">
-					<p>Nombre:</p>
-					<input type="text" class="item__form" name="nombre">
-				</div>
-				<div class="form__box">
-					<p>Correo:</p>
-					<input type="email" class="item__form" placeholder="name@example.com" name="correo">
-				</div>
-				<div class="form__box">
-					<p>Selecciona el motivo:</p>
-					<select class="item__form" name="motivo">
-						<option>Consulta</option>
-						<option>Propuesta</option>
-						<option>Sugerencia</option>
-						<option>Otro</option>
-					</select>
-				</div>
-				<div class="form__box">
-					<p>Escriba aqui</p>
-					<textarea class="item__form" rows="3"></textarea name="mensaje">
-				</div>
-				<input type="submit" class="btn" value="Enviar" name="boton">
-			</form>
-			<a href="email:matiasandrada5622@gmail.com" id="email">mail</a>
+				<form name="frmContacto" method="post" action="sendbymail.php">
+					<table width="500px">
+						<tr>
+							<td>
+								<label for="first_name">Nombre: *</label>
+							</td>
+							<td>
+								<input type="text" name="first_name" maxlength="50" size="25">
+							</td>
+						</tr>
+						<tr>
+							<td valign="top"">
+					<label for=" last_name">Apellido: *</label>
+							</td>
+							<td>
+								<input type="text" name="last_name" maxlength="50" size="25">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="email">Dirección de E-mail: *</label>
+							</td>
+							<td>
+								<input type="text" name="email" maxlength="80" size="35">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="telephone">Número de teléfono:</label>
+							</td>
+							<td>
+								<input type="text" name="telephone" maxlength="25" size="15">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="comments">Comentarios: *</label>
+							</td>
+							<td>
+								<textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align:right">
+								<input class="btn" type="submit" value="Enviar">
+							</td>
+						</tr>
+					</table>
+				</form>
+
 		</section>
 
 		<footer class="bg-dark text-center text-white">
 
 			<div class="container p-3 pb-0">
-				
+
 				<section class="mb-4">
 					<!-- Facebook -->
-					<a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998; border-radius: 48px;" href="https://www.facebook.com/profile.php?id=100005728066180"
-						role="button"><i class="fab fa-facebook-f">
-						<img src="multimedia/iconfooter/facebook.png" width="32px">
+					<a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998; border-radius: 48px;"
+						href="https://www.facebook.com/profile.php?id=100005728066180" role="button"><i
+							class="fab fa-facebook-f">
+							<img src="multimedia/iconfooter/facebook.png" width="32px">
 						</i></a>
 					<!-- Instagram -->
-					<a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac; border-radius: 48px;" href="https://www.instagram.com/matias_andrada5/?hl=es-la"
-						role="button"><i class="fab fa-instagram">
-						<img src="multimedia/iconfooter/instagram.png" width="32px">
+					<a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac; border-radius: 48px;"
+						href="https://www.instagram.com/matias_andrada5/?hl=es-la" role="button"><i
+							class="fab fa-instagram">
+							<img src="multimedia/iconfooter/instagram.png" width="32px">
 						</i></a>
-	
+
 					<!-- Linkedin -->
-					<a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca; border-radius: 48px;" href="https://www.linkedin.com/in/matias-andrada-810900217/"
-						role="button"><i class="fab fa-linkedin-in">
-						<img src="multimedia/iconfooter/linkedin.png" width="32px">
+					<a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca; border-radius: 48px;"
+						href="https://www.linkedin.com/in/matias-andrada-810900217/" role="button"><i
+							class="fab fa-linkedin-in">
+							<img src="multimedia/iconfooter/linkedin.png" width="32px">
 						</i></a>
-	
+
 					<!-- whatsapp -->
-					<a class="btn btn-primary btn-floating m-1" style="background-color: #00ca22; border-radius: 48px;" href="https://wa.me/543532401540"
-						role="button"><i class="fab fa-linkedin-in">
-						<img src="multimedia/iconfooter/whatsapp.png" width="32px">
+					<a class="btn btn-primary btn-floating m-1" style="background-color: #00ca22; border-radius: 48px;"
+						href="https://wa.me/543532401540" role="button"><i class="fab fa-linkedin-in">
+							<img src="multimedia/iconfooter/whatsapp.png" width="32px">
 						</i></a>
-					
-						<!-- Twitter --
+
+					<!-- Twitter --
 					<a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!"
 					role="button"><i class="fab fa-twitter"></i></a>
 					!-- Github --
 					<a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!"
 						role="button"><i class="fab fa-github"></i></a> -->
 				</section>
-				
+
 			</div>
-			
-	
-			
+
+
+
 			<div class="text-center p-0" style="background-color: rgba(0, 0, 0, 0.2);">
-				
+
 				<a class="text-white" href="index.html">^</a>
 			</div>
-			
+
 		</footer>
-		<script src=js/wow.min.js>
-			new WOW().init();
-		</script>
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+		<script src=js/wow.min.js> new WOW().init(); </script> <script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
 			integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
 		</script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"

@@ -38,33 +38,14 @@ body {
   height: 100px;
 }
 
-.container__form .form__box {
+.container__form label {
   color: #d9d9d9;
   font-size: 1.1em;
   color: #fff;
   text-align: center;
 }
 
-.container__form .form__box p {
-  background-color: #000;
-  border-radius: 5px;
-}
-
-.container__form .form__box input, .container__form .form__box textarea, .container__form .form__box select {
-  background: #fff;
-  opacity: 0.3;
-  border: 0;
-  outline: none;
-}
-
-.container__form .form__box .item__form {
-  border: solid 3px white;
-  width: 100%;
-  height: 35px;
-  padding: 5px;
-}
-
-.container__form .form__box .item__form:focus {
+.container__form label .item__form:focus {
   border-color: #0066FF;
   opacity: 0.7;
 }
