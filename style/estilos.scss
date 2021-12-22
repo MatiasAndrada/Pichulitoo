@@ -123,7 +123,7 @@
 .sobremi__area {
     position: relative;
     height: auto;
-    background-color: map-get($colors, colorB);
+    background-color: map-get($colors, colorA);
 
     .sobremi__container {
         h2 {
@@ -159,10 +159,10 @@
                     color: $textcolor;
                     margin-top: 9%;
                     margin-right: 200px;
-                    padding: 25px;
+                    padding: 15px;
                     width: 570px;
                     height: auto;
-                    background-color: map-get($colors, colorG);
+                    background-color: map-get($colors, colorC);
                     border-radius: 25px;
                     float: right;
                     }   
@@ -197,6 +197,8 @@
                     }
                     .sobremi__img{
                         display: block;
+                        width: 240px;
+                        height: 240px;
                         float: none;
                         margin-left: auto;
                         margin-right: auto;
@@ -209,9 +211,9 @@
 
 
 .service__area {
-    background-color: map-get($colors, colorF);
+    background-color: map-get($colors, colorA);
     position: relative;
-    padding: 40px;
+    padding: 20px;
     height: auto;
 
     .service__text {
@@ -253,7 +255,7 @@
             align-items: center;
             border-radius: 45px;
             padding: 23px;
-            margin: 5px;
+            margin: 5sspx;
 
             .item__box {
                 align-items: center;
@@ -300,62 +302,47 @@
 }
 
 .skill__area {
-    background-color: map-get($colors, colorG);
-    height: 85vh;
-    @media screen and (max-width: 1079px) {
-        height: auto;
-    }
+    background-color: map-get($colors, colorA);
+    height: auto;
+    width: 100%;
     .skill__text {
-        width: 25%;
-        margin: 60px;
-        height: auto;
-        float: left;
-        text-align: left;
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
         h2 {
+            width: auto;
             text-align: center;
             font-size: map-get($headings, h2);
             font-family: $font-tittle;
             text-shadow: shadow(map-get($colors, colorD));
             color: map-get($colors, colorD);
         }
-
         p {
             font-size: map-get($headings, p);
             font-family: $font-paragraph;
             color: $textcolor;
-            padding-top: 50px;
-        }
-        @media screen and (max-width: 1079px){
-            width: 100%;
-            h2{
-            padding-top: 35px;
-            }
-            p{
-            padding: 35px;
-            padding-bottom: 0;
-            }
-            margin: 0;
-            height: auto;
-            text-align: center;
-            float: unset;
+            padding-top: 20px;
         }
     }
+}
+
+
+
     .skill__grid {
-        width: 60%;
-        float: right;
+        width: 100%;
         height: auto;
         padding: 1rem;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-        grid-auto-rows: 220px;
+        grid-template-columns: repeat(5, 160px);
         grid-column-gap: 1.5rem;
         justify-content: center;
-        margin-top: 80px;
-        @media screen and (max-width: 1079px){
-            width: 100%;
-            height: auto;
-            float: unset;
-            margin-top: 0;
+        margin-top: 40px;
+        @media screen and (max-width: 1024px){
+            grid-template-columns: repeat(3, 160px);
+                }
+        @media screen and (max-width: 648px){
+            grid-template-columns: repeat(2, 160px);
                 }
         .skill__grid--item:hover {
             animation-name: iconscale;
@@ -371,16 +358,8 @@
             }
         }
     }
-    @media screen and (max-width: 768px) {
-    .skill__grid{
-        padding: 8px;
-        float: none;
-        grid-auto-rows: 150px;
-        .skill__grid--item{
-            width: 144px;
-        }
-    }
-    }
 
-}
+
+
+
 

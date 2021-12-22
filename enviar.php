@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
 
 <bold>// Debes editar las próximas dos líneas de código de acuerdo con tus preferencias</bold>
-$email_to = "destinatario@sudominio.com";
+$email_to = "matiasandrada5622@gmail.com";
 $email_subject = "Contacto desde el sitio web";
 
 <bold>// Aquí se deberían validar los datos ingresados por el usuario</bold>

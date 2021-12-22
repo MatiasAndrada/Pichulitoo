@@ -8,7 +8,10 @@
 
 body {
     background-color: map-get($colors, colorA);
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
 }
 
 
@@ -16,40 +19,67 @@ body {
     position: absolute;
     margin-top: -15%;
     width: 100%;
-    height: auto;
     z-index: -10;
+    @media screen and (max-width: 768px){
+        margin-top: 0;
+    }
 }
-
-    h2 {
+.text__form{
+        margin-top: 280px;
         font-size: map-get($headings, h2);
         color: map-get($colors, colorC);
         text-shadow: shadow(map-get($colors, colorC));
         text-align: center;
         z-index: 5;
-        height: 100px;
-        margin-top: 22%;
+        @media screen and (max-width: 768px){
+            margin-top: 200px;
+        }
     }
 .form__area{
-    width: 500px;
-    height: auto;
+    margin-top: 25px;
     z-index: 15;
     margin-left: 50%;
-    margin-left: 500px;
-    label{
-        color: $textcolor;
-        font-size: map-get($headings, p);
-        font-family: $font-paragraph;
+    margin-right: 50%;  
+    .form__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        label{
+            width: 180px;
+            text-align: center;
+            color: $textcolor;
+            font-size: map-get($headings, p);
+        }
+        input, textarea{
+            background-color: $textcolor;
+            opacity: 0.5;
+            outline: none;
+        }
+        input:focus, textarea:focus{
+            border: 3px solid map-get($colors, colorC) ;
+            border-radius: 7px;
+            opacity: 0.7;
+            color: #fff;
+        }
+    .btn{
+        background-color: $textcolor;
+        margin-top: 20px;
+        border: none;
+        
+    }
+    .btn:active{
+        background-color: map-get($colors, colorC);
+        border-radius: 5px;
+        scale: 1.05;
+    }
     }
 
 }
+
 
 
 
 #email{
     opacity: 0;
-}
-footer{
-    position: relative;
-    top: 1000px;
-    width: 100%;
 }
